@@ -38,7 +38,6 @@ export const ModalReview: FC<ModalRevievProps> = ({
   const dispatch = useDispatch<AppDispatch>();
 
   const handleSubmit = (values: ReviewFormValues) => {
-    console.log("Оцінка:", values.rating);
     dispatch(addRating({ value: values.rating, recepId: id }));
     onToggleModal();
   };
@@ -81,10 +80,9 @@ export const ModalReview: FC<ModalRevievProps> = ({
 
           return (
             <FormReview onSubmit={handleSubmit}>
-              <TitleReviewForm>Оцініть рецепт</TitleReviewForm>
+              <TitleReviewForm>Оцініть цей рецепт</TitleReviewForm>
               <DescriptionReviewForm>
-                Поділіться своєю думкою — ваша оцінка допоможе іншим обрати
-                найкраще!
+                Це допоможе іншим знайти смачні рецепти
               </DescriptionReviewForm>
 
               <LabelStyled>
