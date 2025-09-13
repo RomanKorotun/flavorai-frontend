@@ -81,9 +81,10 @@ export const ModalReview: FC<ModalRevievProps> = ({
 
           return (
             <FormReview onSubmit={handleSubmit}>
-              <TitleReviewForm>Оцініть психолога</TitleReviewForm>
+              <TitleReviewForm>Оцініть рецепт</TitleReviewForm>
               <DescriptionReviewForm>
-                Ваша оцінка допомагає іншим користувачам.
+                Поділіться своєю думкою — ваша оцінка допоможе іншим обрати
+                найкраще!
               </DescriptionReviewForm>
 
               <LabelStyled>
